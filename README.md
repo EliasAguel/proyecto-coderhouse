@@ -1,1 +1,2 @@
-# proyecyo-coderhouse
+# proyecto coderhouse
+Alumno: Elias Aguel
