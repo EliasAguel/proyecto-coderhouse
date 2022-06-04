@@ -1,0 +1,728 @@
+/*comienzo reseteo*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*fin reseteo*/
+
+
+/*comienzo body*/
+
+body {
+    background-color: #D9D9D9;
+}
+
+/*fin body*/
+
+
+/*comienzo del header*/
+
+.encabezado {
+    background-color: #E76464;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.calendario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 130px;
+    height: 28px;
+    margin-left: 10px;
+    border-radius: 10px; 
+}
+
+.fecha {
+    padding-right:8px ;
+    font-size: 18px;
+    margin-left: 13px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+    border-top: 0px;
+    border-right:1px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-color: black;
+    border-style: solid;
+}
+
+.hora {
+    font-size: 18px;
+    margin-left: 11px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+}
+
+header a {
+    background-color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header a .logo {
+    width: 200px;
+}
+
+/*fin del header*/
+
+
+/*comienzo del nav*/
+
+nav a .lupa {
+    position: absolute;
+    width: 25px;
+    top: 15px;
+    left: 1700px;
+}
+
+.menu {
+    text-decoration: none;
+    list-style: none;
+    background-color: #A90000;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu ul li a {
+    margin-left: 14px;
+    margin-right: 14px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.lista-nav {
+    border-top: 0px;
+    border-right:0px;
+    border-bottom: 0px;
+    border-left: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+/*fin del nav*/
+
+
+/*comienzo de noticia principal*/
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+.noticia-principal {
+    width: 1050px;
+    height: 700px;
+    background-image: url(../img/foto-noticia.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.descripcion-noticia-principal {
+    height: 300px;
+    background: rgba(169, 0, 0, 0.6);
+    border-radius: 10px;
+    padding-top: 45px;
+}
+
+.descripcion-noticia-principal h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.descripcion-noticia-principal p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    margin-left: 18px;
+    margin-right: 18px;
+    color: white;
+}
+
+.section-1 .noticia-secundaria div a {
+    background-image: url(../img/foto-noticia.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.section-1 .noticia-secundaria div article a h2 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+
+.noticia-principal {
+    margin-right: 100px;
+}
+
+.noticia-secundaria-1 {
+    margin-bottom: 100px;
+}
+
+.noticia {
+    margin-top: 100px;
+}
+
+.noticia-terciaria {
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.noticia-terciaria .noticia article a {
+    background-image: url('../img/foto-noticia.jpg');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.noticia-terciaria .noticia article a h2 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+
+/*fin de noticia principal*/
+
+
+/*comienzo de seccion de noticias del menu*/
+
+.section-noticias-titulo {
+    padding-bottom: 20px;
+}
+
+.section-noticias {
+    margin-top: 150px;
+    padding-top: 80px;
+    margin-left: 40px;
+}
+
+.section-top {
+    margin-top: 300px;
+}
+
+.section-noticias div p {
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+}
+
+.section-noticias div a {
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-con-noticias article {
+    width: 600px;
+    height: 400px;
+    margin-top: 45px;
+}
+
+.section-con-noticias {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 1300px;
+    height: 900px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.section-con-noticias .img-noticias {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('../img/foto-noticia.jpg');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+}
+
+.img-noticias .titulo-noticias-article {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+
+/*fin de seccion de noticias del menu*/
+
+
+/*comienzo de la publicidad*/
+
+aside {
+    margin-top: 100px;
+}
+
+aside a {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+aside a img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+/*fin de la publicidad*/
+
+
+/*comienzo de las paginas con noticias*/
+
+.section-noticias-page {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.section-noticias-page div h1 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 65px ;
+}
+
+.noticias-page {
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
+.noticias-page a img {
+    height: 400px;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.noticias-page div {
+    display: flex;
+    align-items: flex-end ;    
+}
+
+.noticias-page a strong {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: black;
+}
+
+.noticias-page div p {
+    margin-left: 14px;
+    margin-bottom: 15px;
+    width: 800px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.noticias-page-2 {
+    margin-top: 120px;
+}
+
+.siguiente  {
+    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.siguiente a {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.siguiente a img {
+    width: 100%;
+}
+
+.siguiente-anterior a {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.siguiente-anterior a img {
+    width: 100%;
+}
+
+.siguiente-anterior {
+    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*fin de las paginas con noticias*/
+
+
+/*comienzo de la pagina de noticias*/
+
+.titulo-noticia-completa {
+    margin-bottom: 100px;
+}
+
+
+.titulo-noticia-completa h1  {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 65px ;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.noticia-completa div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.noticia-completa img {
+    height: 400px;
+    width: 1100px;
+}
+
+.noticia-completa p {
+    margin-bottom: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*fin de las paginas de noticias*/
+
+
+/*comienzo de contactos*/
+
+.titulo-contactos h1 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 65px ;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.como-contactarnos {
+    margin-top: 230px;
+    margin-bottom: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.como-contactarnos form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.como-contactarnos .nombre {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.como-contactarnos form .datos {
+    width: 100%;
+}
+
+form label p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px ;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+form label {
+    margin-bottom: 9px;
+}
+
+.como-contactarnos .nombre label input {
+    height: 28px;
+    width: 260px;
+    border: #A90000 solid 1px;
+    border-radius: 12px;
+}
+
+.como-contactarnos form .datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.como-contactarnos form .datos label input {
+    width: 100%;
+    height: 28px;
+    border: #A90000 solid 1px;
+    border-radius: 12px;
+}
+
+.como-contactarnos form .datos label textarea {
+    width: 100%;
+    height: 200px;
+    border: #A90000 solid 1px;
+    border-radius: 12px;
+}
+
+.enviar {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: #A90000 solid 1px;
+    color: white;
+    background-color:#A90000;
+}
+
+.como-contactarnos .contactos-datos {
+    height: 370px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.como-contactarnos .contactos-datos p {
+    height: 40px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: white;
+    border: #A90000 solid 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px ;
+}
+
+/*comienzo de contactos*/
+
+
+/*comienzo de quienes somos*/
+
+.quienes-somos-section {
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+.titulo-quienes-somos h1 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 65px ;
+    margin-top: 100px;
+}
+
+.como-surgio {
+    margin-top: 100px;
+}
+
+.como-surgio h2 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 500 ;
+    font-size: 35px ;
+    margin-bottom: 50px; 
+}
+
+.como-surgio p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.como-surgio img {
+    width: 700px;
+    border-radius: 10px;
+}
+
+.quienes-trabajamos {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.quienes-trabajamos-titulo h2 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 500 ;
+    font-size: 35px ;
+    margin-bottom: 100px;
+}
+
+.trabajadores {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+}
+
+.persona .foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+}
+
+.persona .logos img {
+    width: 35px;
+}
+
+.descripcion-persona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logos-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    margin-top: 10px;
+}
+
+/*comienzo de quienes somos*/
+
+
+/*comienzo del footer*/
+
+footer {
+    background-color: #A90000;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+footer a {
+    color: #D9D9D9; 
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 300;
+}
+
+.nosotros {
+    height: 100%;
+    display: inline-flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    margin-left: 5px;
+}
+
+.quienes-somos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacto span {
+    margin-left: 10px;
+}
+
+.quienes-somos span {
+    margin-left: 10px;
+}
+
+footer a img {
+    width:  30px;
+}
+
+.redes {
+    opacity: 0.60;
+    margin-right: 5px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.redes a {
+    margin-right: 10px;
+}
+
+.youtube img {
+    width: 38px;
+}
+
+/*fin del footer*/
